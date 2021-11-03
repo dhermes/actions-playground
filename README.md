@@ -6,6 +6,10 @@ These examples contain all environment variables beginning with `GITHUB_` as
 well as the output of `${{ toJSON(github) }}`. This should give a deeper
 understanding of which inputs are available to workflow and action authors.
 
+## Anything
+
+Placeholder
+
 ## Example Outputs
 
 See the directories here for the captured outputs, e.g.
