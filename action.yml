@@ -1,0 +1,42 @@
+#
+# Copyright (c) 2021 - Present. Blend Labs, Inc. All rights reserved
+# Blend Confidential - Restricted
+#
+---
+name: Composite
+description: >
+  Compose multiple (optional) checks into a single check based on file paths
+  in a pull request
+author: Blend Labs, inc.
+inputs:
+  github-token:
+    required: true
+    default: ${{ github.token }}
+    description: A token that can be used with the GitHub API.
+  timeout:
+    required: true
+    default: 30m
+    description: >
+      A maximum duration that the action will wait for other actions
+      to complete.
+  interval:
+    required: true
+    default: 30s
+    description: >
+      Interval used when polling until all required checks have completed.
+  checks-yaml:
+    required: false
+    description: >
+      A structured array of checks (job names) and the corresponding file
+      patterns where those jobs should be required. (Exactly one of
+      `checks-yaml` and `checks-filename` are required.)
+  checks-filename:
+    required: false
+    description: >
+      A filename containing a structured array of checks (job names) and
+      the corresponding file patterns where those workflows should be required.
+      (Exactly one of `checks-yaml` and `checks-filename` are required.)
+
+runs:
+  using: node12
+  main: index.js
