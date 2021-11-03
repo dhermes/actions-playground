@@ -1,0 +1,30 @@
+---
+name: Sleep A Bunch
+
+on:
+  pull_request:
+    branches:
+    - main
+
+jobs:
+  sleep-1:
+    name: sleep1
+    runs-on:
+    - ubuntu-20.04
+
+    steps:
+    - name: Sleep
+      run: |
+        echo Hello
+        sleep 60
+
+  sleep-2:
+    name: sleep2
+    runs-on:
+    - ubuntu-20.04
+
+    steps:
+    - name: Sleep
+      run: |
+        echo Hello
+        sleep 120

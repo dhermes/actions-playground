@@ -1,0 +1,21 @@
+---
+name: All Checks
+
+on:
+  pull_request:
+    branches:
+    - main
+
+jobs:
+  meta:
+    runs-on:
+    - ubuntu-20.04
+
+    steps:
+    - name: Ensure All Optional Checks Have Passed
+      uses: dhermes/actions-playground@action-debug
+      with:
+        github-token: ${{ github.token }}
+        checks-yaml: |
+          - job: sleep1
+          - job: sleep2
