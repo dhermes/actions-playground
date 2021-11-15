@@ -17,6 +17,7 @@ For links (which may have expired) to the original runs, see the
 -   `create`: [Run 1415260203][3] (original [run][2])
 -   `pull_request`: [Run 1415282007][9] (original [run][8])
 -   `push`: [Run 1415256715][5] (original [run][4])
+-   `schedule`: [Run 1464380337][11] (original [run][10])
 -   `workflow_dispatch`: [Run 1415276408][7] (original [run][6])
 
 [1]: https://github.com/dhermes/actions-playground/actions/workflows/trigger-many.yml
@@ -28,3 +29,5 @@ For links (which may have expired) to the original runs, see the
 [7]: _examples/workflow_dispatch/1415276408
 [8]: https://github.com/dhermes/actions-playground/actions/runs/1415282007
 [9]: _examples/pull_request/1415282007
+[10]: https://github.com/dhermes/actions-playground/actions/runs/1464380337
+[11]: _examples/schedule/1464380337
