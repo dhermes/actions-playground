@@ -2,8 +2,6 @@
 name: Trigger Many
 
 on:
-  schedule:
-  - cron: '25 22 * * *'
   # # # Invalid workflow file:: Workflow 'Trigger Many' cannot listen to itself.
   # workflow_run:
   #   workflows:
