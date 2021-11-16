@@ -16,9 +16,26 @@ on:
   push:
     branches:
     - trigger-many
-  pull_request:
+  pull_request_target:
+    types:
+    - opened
+    - synchronize
+    - reopened
+    - labeled
+    - unlabeled
     branches:
     - trigger-many
+    - main
+  pull_request:
+    types:
+    - opened
+    - synchronize
+    - reopened
+    - labeled
+    - unlabeled
+    branches:
+    - trigger-many
+    - main
   workflow_dispatch:
     inputs:
       reason:
