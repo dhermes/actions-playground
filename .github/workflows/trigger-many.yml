@@ -9,6 +9,10 @@ on:
   #   types:
   #   - completed
   create: {}  # For a tag
+  issue_comment: {}
+  pull_request_review: {}
+  pull_request_review_comment: {}
+  label: {}
   push:
     branches:
     - trigger-many
